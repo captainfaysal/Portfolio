@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <!-- Background Rectangle -->
+  <rect width="400" height="400" fill="#f0f0f0" rx="10" ry="10"/>
+  
+  <!-- Decorative Elements -->
+  <circle cx="100" cy="100" r="50" fill="#2ecc71" opacity="0.7"/>
+  <circle cx="300" cy="300" r="50" fill="#2ecc71" opacity="0.7"/>
+  
+  <!-- Code Symbol -->
+  <text x="200" y="180" font-family="Arial" font-size="100" text-anchor="middle" fill="#333">&lt;/&gt;</text>
+  
+  <!-- Text -->
+  <text x="200" y="250" font-family="Arial" font-size="24" text-anchor="middle" fill="#333">Web Developer</text>
+  <text x="200" y="280" font-family="Arial" font-size="18" text-anchor="middle" fill="#555">CSE Student</text>
+</svg>

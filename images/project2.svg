@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="250" viewBox="0 0 300 250">
+  <!-- Background Rectangle -->
+  <rect width="300" height="250" fill="#f0f0f0"/>
+  
+  <!-- Project Icon -->
+  <rect x="75" y="50" width="150" height="100" rx="5" ry="5" fill="#2ecc71"/>
+  
+  <!-- Portfolio Icon -->
+  <rect x="100" y="70" width="40" height="60" rx="3" ry="3" fill="#fff"/>
+  <rect x="160" y="70" width="40" height="60" rx="3" ry="3" fill="#fff"/>
+  <rect x="110" y="80" width="20" height="10" fill="#2ecc71"/>
+  <rect x="110" y="95" width="20" height="10" fill="#2ecc71"/>
+  <rect x="110" y="110" width="20" height="10" fill="#2ecc71"/>
+  <rect x="170" y="80" width="20" height="40" fill="#2ecc71"/>
+  
+  <!-- Text -->
+  <text x="150" y="170" font-family="Arial" font-size="18" text-anchor="middle" fill="#333">Portfolio Website</text>
+  <text x="150" y="195" font-family="Arial" font-size="14" text-anchor="middle" fill="#555">HTML, CSS, JavaScript</text>
+</svg>
