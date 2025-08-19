@@ -127,12 +127,33 @@ document.addEventListener('DOMContentLoaded', function() {
             return;
         }
         
-        // Here you would typically send the form data to a server
-        // For now, we'll just show a success message
-        alert('Your message has been sent successfully!');
+        // Update the form action to your formspree endpoint
+        const formData = new FormData();
+        formData.append('name', name);
+        formData.append('email', email);
+        formData.append('subject', subject);
+        formData.append('message', message);
         
-        // Reset form
-        this.reset();
+        // Send the form data using fetch API to a form handling service
+        fetch('https://formspree.io/f/mnnzkpzz', {
+            method: 'POST',
+            body: formData,
+            headers: {
+                'Accept': 'application/json'
+            }
+        })
+        .then(response => {
+            if (response.ok) {
+                alert('Your message has been sent successfully!');
+                this.reset();
+            } else {
+                alert('Oops! There was a problem sending your message.');
+            }
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            alert('Oops! There was a problem sending your message.');
+        });
     });
 
     // Typing animation for home section
