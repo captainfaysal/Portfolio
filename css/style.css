@@ -166,6 +166,7 @@ section {
 
 .home-content .image img {
     max-width: 400px;
+    width: 100%;
     border-radius: 50%;
     border: 5px solid #2ecc71;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
@@ -444,6 +445,19 @@ section {
     height: 250px;
     object-fit: cover;
     transition: all 0.3s ease;
+    display: block;
+}
+
+@media (max-width: 576px) {
+    .project-box img {
+        height: 200px;
+    }
+}
+
+@media (max-width: 400px) {
+    .project-box img {
+        height: 180px;
+    }
 }
 
 .project-box:hover img {
@@ -550,6 +564,17 @@ section {
 .contact-form {
     flex: 1;
     min-width: 300px;
+    width: 100%;
+}
+
+@media (max-width: 576px) {
+    .contact-form {
+        min-width: 100%;
+    }
+    
+    .contact-info {
+        min-width: 100%;
+    }
 }
 
 .input-box {
@@ -651,6 +676,14 @@ section {
         width: 100%;
         text-align: center;
     }
+    
+    .contact-content {
+        flex-direction: column;
+    }
+    
+    section {
+        padding: 70px 0;
+    }
 }
 
 @media (max-width: 768px) {
@@ -667,6 +700,7 @@ section {
         background: #fff;
         padding: 20px;
         transition: all 0.3s ease;
+        z-index: 999;
     }
     
     .navigation.active {
@@ -700,15 +734,31 @@ section {
     .contact-content {
         flex-direction: column;
     }
+    
+    .home {
+        height: auto;
+        padding-top: 120px;
+        padding-bottom: 60px;
+    }
+    
+    .service-box, .skill-box, .project-box {
+        margin-bottom: 20px;
+    }
+    
+    .about-content .image img, .home-content .image img {
+        width: 80%;
+        max-width: 280px;
+    }
 }
 
 @media (max-width: 576px) {
     .home-content .image img, .about-content .image img {
-        max-width: 250px;
+        max-width: 220px;
     }
     
     .services-content, .skills-content, .projects-content {
         grid-template-columns: 1fr;
+        gap: 20px;
     }
     
     .footer-content {
@@ -718,5 +768,100 @@ section {
     
     .footer .social {
         margin-top: 20px;
+    }
+    
+    .home-content h1 {
+        font-size: 28px;
+    }
+    
+    .home-content h3 {
+        font-size: 18px;
+    }
+    
+    .home-content p {
+        font-size: 14px;
+    }
+    
+    .section-title h2 {
+        font-size: 24px;
+    }
+    
+    .section-title span {
+        font-size: 14px;
+    }
+    
+    .btn {
+        padding: 8px 20px;
+        font-size: 14px;
+    }
+    
+    .info-box .text h3 {
+        font-size: 16px;
+    }
+    
+    .info-box .text p {
+        font-size: 14px;
+    }
+    
+    .container {
+        padding: 0 15px;
+    }
+    
+    section {
+        padding: 50px 0;
+    }
+    
+    .scroll-to-top {
+        bottom: 20px;
+        right: 20px;
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+    }
+}
+
+@media (max-width: 400px) {
+    .home-content .image img, .about-content .image img {
+        max-width: 180px;
+    }
+    
+    .home-content h1 {
+        font-size: 24px;
+    }
+    
+    .home-content h3 {
+        font-size: 16px;
+    }
+    
+    .service-box, .skill-box, .project-box {
+        padding: 15px;
+    }
+    
+    .service-box i {
+        font-size: 30px;
+    }
+    
+    .service-box h3 {
+        font-size: 18px;
+    }
+    
+    .info-box i {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 16px;
+    }
+    
+    .social a {
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+        margin-right: 5px;
+    }
+    
+    .buttons .btn {
+        display: block;
+        margin-bottom: 10px;
+        text-align: center;
     }
 }

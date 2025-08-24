@@ -14,8 +14,10 @@ document.addEventListener('DOMContentLoaded', function() {
         menuBtn.classList.toggle('active');
         if (menuBtn.classList.contains('active')) {
             menuBtn.innerHTML = '<i class="fas fa-times"></i>';
+            document.body.style.overflow = 'hidden'; // Prevent scrolling when menu is open
         } else {
             menuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+            document.body.style.overflow = 'auto'; // Enable scrolling when menu is closed
         }
     });
 
@@ -25,6 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
             navigation.classList.remove('active');
             menuBtn.classList.remove('active');
             menuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+            document.body.style.overflow = 'auto'; // Enable scrolling when menu is closed via link click
         });
     });
 
